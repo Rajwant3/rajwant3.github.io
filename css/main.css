@@ -864,18 +864,20 @@ h6 {
 } 
 
 
+/* Programming section begin */
+#skills .container .div-card .python {
+  background-image: url("../img/python.png");
+}
+#skills .container .div-card .java {
+  background-image: url("../img/logo_java3.png");
+}
+#skills .container .div-card .go {
+  background-image: url("../img/go_logo.png");
+}
+/* Programming section end */
 
 
-
-#skills .container .div-card .mongodb {
-  background-image: url("../img/mongodb.png");
-}
-#skills .container .div-card .node-js {
-  background-image: url("../img/node-js.png");
-}
-#skills .container .div-card .express-js {
-  background-image: url("../img/express-js.png");
-}
+/* Frontend section begin */
 #skills .container .div-card .html {
   background-image: url("../img/html-5.png");
 }
@@ -885,44 +887,79 @@ h6 {
 #skills .container .div-card .js {
   background-image: url("../img/js.png");
 }
-#skills .container .div-card .python {
-  background-image: url("../img/python.png");
+#skills .container .div-card .ang {
+  background-image: url("../img/ang_logo.png");
 }
-#skills .container .div-card .java {
-  background-image: url("../img/logo_java3.png");
+
+#skills .container .div-card .js {
+  background-image: url("../img/js.png");
 }
-#skills .container .div-card .php {
-  background-image: url("../img/logo_php.png");
+#skills .container .div-card .c {
+  background-image: url("../img/c.png");
 }
-#skills .container .div-card .dj {
-  background-image: url("../img/logo_dj.png");
+
+/* Frontend technologies logo end */
+
+
+/* Frameworks technologies logos */
+#skills .container .div-card .sp {
+  background-image: url("../img/sp_logo.png");
 }
-#skills .container .div-card .laravel {
-  background-image: url("../img/logo_laravel.png");
+#skills .container .div-card .sb {
+  background-image: url("../img/sb_logo.png");
 }
-#skills .container .div-card .flask {
-  background-image: url("../img/logo_flask.png");
+#skills .container .div-card .hb {
+  background-image: url("../img/hb_logo.jpg");
 }
-#skills .container .div-card .as {
-  background-image: url("../img/logo_as.png");
+#skills .container .div-card .security {
+  background-image: url("../img/security_logo.png");
+}
+#skills .container .div-card .jpa {
+  background-image: url("../img/jpa_logo.png");
+}
+
+/* Frameworks section end */
+
+/* Databases section start */
+
+#skills .container .div-card .mysql {
+  background-image: url("../img/mysql-logo.png");
+}
+#skills .container .div-card .postgre {
+  background-image: url("../img/psql_logo.png");
 }
 #skills .container .div-card .oracle {
   background-image: url("../img/logo_oracle.png");
 }
-#skills .container .div-card .docker {
-  background-image: url("../img/logo_docker.png");
-}
-#skills .container .div-card .selenium {
-  background-image: url("../img/logo_selenium.png");
+#skills .container .div-card .plsql {
+  background-image: url("../img/plsql_logo.png");
 }
 #skills .container .div-card .sql {
   background-image: url("../img/logo_sql.png");
 }
-#skills .container .div-card .pm {
-  background-image: url("../img/logo_pm.png");
+
+#skills .container .div-card .mongodb {
+  background-image: url("../img/mongodb.png");
 }
-#skills .container .div-card .fb {
-  background-image: url("../img/logo_fb.png");
+#skills .container .div-card .dynamodb {
+  background-image: url("../img/dynamodb.png");
+}
+#skills .container .div-card .redshift {
+  background-image: url("../img/redshift_logo.png");
+}
+
+
+/* Databases section end */
+
+
+
+/* AWS Cloud Section Start */
+#skills .container .div-card .jq {
+  background-image: url("../img/jq_logo.png");
+}
+
+#skills .container .div-card .os {
+  background-image: url("../img/os_logo.jpeg");
 }
 #skills .container .div-card .azure {
   background-image: url("../img/logo_azure.png");
@@ -930,19 +967,39 @@ h6 {
 #skills .container .div-card .aws {
   background-image: url("../img/logo_aws.png");
 }
-#skills .container .div-card .gcp {
-  background-image: url("../img/logo_gcp.png");
-}
-#skills .container .div-card .react-js {
-  background-image: url("../img/react-js.png");
-}
-#skills .container .div-card .c {
-  background-image: url("../img/c.png");
-}
+/* Cloud section End */
 
+/* Others Section Start */
+/* Postman */
+#skills .container .div-card .pm {
+  background-image: url("../img/logo_pm.png");
+}
+#skills .container .div-card .script {
+  background-image: url("../img/script_logo.png");
+}
+#skills .container .div-card .jenkins {
+  background-image: url("../img/jenkins_logo.png");
+}
+#skills .container .div-card .jira {
+  background-image: url("../img/jira_logo.jpg");
+}
+#skills .container .div-card .confluence {
+  background-image: url("../img/confluence_logo.jpeg");
+}
 #skills .container .div-card .git {
   background-image: url("../img/git.png");
 }
+#skills .container .div-card .github {
+  background-image: url("../img/github_logo.png");
+}#skills .container .div-card .gitlab {
+  background-image: url("../img/gitlab_logo.png");
+}
+#skills .container .div-card .swg {
+  background-image: url("../img/sg_logo.png");
+}
+
+/* Others  Section END */
+
 #skills .container .div-card .ux-ui {
   background-image: url("../img/ui-ux.png");
 }
