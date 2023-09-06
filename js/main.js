@@ -793,7 +793,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "OnMo Videos was a premium video platform developed in multiple technologies. It provided users with a rich library of content, accessible through mobile network billing. With personalized recommendations and multi-device support, it offered a seamless and convenient entertainment experience.However, At present this is not live.",
       thumbnail: "img/Onmovideos_logo.png",
       techStack: ["Java,Spring boot, Cloud Search, AWS, RDS"],
-      srcURL: "https://github.com/Shivamnirwani/Android-Application-RENO",
+  
     }, {
       title: "Rk Electronics",
       description:
