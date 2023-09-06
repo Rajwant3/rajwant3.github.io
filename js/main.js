@@ -59,6 +59,14 @@ function toTimelines() {
   });
 }
 
+function toResume() {
+  var pdfPath = 'resume/resume.pdf';
+
+  // Open the PDF in a new tab/window
+  window.open(pdfPath, '_blank');
+}
+
+
 function toContact() {
   var element = document.getElementById("unique-contact");
   var headerOffset = 85;
@@ -861,7 +869,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 new Typewriter(".loading-text", {
-  strings: ["Initializing..."],
+  strings: ["Welcome to my portfolio..."],
   autoStart: true,
   delay: 25,
   cursor: "|",
