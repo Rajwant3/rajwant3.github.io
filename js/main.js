@@ -776,38 +776,48 @@ function progressIndicator() {
   })();
 });
 
+// Home Page Slider
+
+// JavaScript to make the slider functional
+const slider = document.querySelector('.slider');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+let sliderCurrentIndex = 0;
 
 
 document.addEventListener("DOMContentLoaded", function () {
+
+
+// Load projects 
   const projectData = [
     {
       title: "Fashion Boutique",
-      description: "Fashion Boutique is a dynamic and enticing platform for showcasing men's and women's winter fashion collections. The site boasts a responsive design, intuitive navigation, dynamic product displays, filtering options, and a fully functional shopping cart. Visitors can explore and shop for their favorite winter clothing items with ease, making it a must-visit destination for fashion enthusiasts.",
-      thumbnail: "img/fashion_home.png",
-      techStack: ["HTML", "CSS", "JavaScript", "Jquery"],
+      description: "Fashion Boutique is a dynamic and enticing platform for showcasing men's and women's winter fashion collections. The site boasts a responsive design, intuitive navigation, dynamic product displays, filtering options, and a fully functional shopping cart. Visitors can explore and shop for their favorite winter clothing items with ease, making it a must-visit destination for fashion enthusiasts.\n\n<b>Tech Stack:</b> HTML, CSS, JavaScript, Jquery",
+      thumbnail: "img/fashion_home2.png",
+      // techStack: ["HTML", "CSS", "JavaScript", "Jquery"],
       srcURL: "https://rajwant3.github.io/FashionBoutique/index.html",
     },
     {
       title: "Flappy Bird",
       description:
-        "This project is a replica of Flappy Bird game and quite similar to dinosaur game of Chrome browser, where a bird keeps jumping until it hits an obstacle. Players control a bird using the spacebar to flap its wings, and the game ends if the bird hits obstacles—pipes placed both above and below. The player's score is based on how many obstacles they successfully pass.",
-      thumbnail: "img/flappy.png",
-      techStack: ["Python,MySQl,Tkinter,Pygame"],
+        "This project is a replica of Flappy Bird game and quite similar to dinosaur game of Chrome browser, where a bird keeps jumping until it hits an obstacle. Players control a bird using the spacebar to flap its wings, and the game ends if the bird hits obstacles—pipes placed both above and below. The player's score is based on how many obstacles they successfully pass.\n\n<b>Tech Stack:</b> Python,MySQl,Tkinter,Pygame",
+      thumbnail: "img/flappy2.png",
+      // techStack: ["Python,MySQl,Tkinter,Pygame"],
       srcURL: "https://github.com/Rajwant3/FlappyBird",
     },
     {
       title: "OnMo Videos",
       description:
-        "OnMo Videos was a premium video platform developed in multiple technologies. It provided users with a rich library of content, accessible through mobile network billing. With personalized recommendations and multi-device support, it offered a seamless and convenient entertainment experience.However, At present this is not live.",
-      thumbnail: "img/Onmovideos_logo.png",
-      techStack: ["Java,Spring boot, Cloud Search, AWS, RDS"],
+        "OnMo Videos was a premium video platform developed in multiple technologies. It provided users with a rich library of content, accessible through mobile network billing. With personalized recommendations and multi-device support, it offered a seamless and convenient entertainment experience.However, At present this is not live.\n\n<b>Tech Stack:</b> Java,Spring boot, Cloud Search, AWS, RDS",
+      thumbnail: "img/Onmovideos_logo2.png",
+      // techStack: ["Java,Spring boot, Cloud Search, AWS, RDS"],
   
     }, {
       title: "Rk Electronics",
       description:
-        "The RK Electronics project, developed during college term 1, is an e-commerce platform for electronic products. Built using HTML, CSS, and JavaScript, this platform offers a user-friendly interface for browsing and purchasing electronic gadgets.",
-      thumbnail: "img/rkelectronics_home.png",
-      techStack: ["HTML,Css, JavaScript"],
+        "The RK Electronics project, developed during college term 1, is an e-commerce platform for electronic products. Built using HTML, CSS, and JavaScript, this platform offers a user-friendly interface for browsing and purchasing electronic gadgets.\n\n<b>Tech Stack:</b> HTML,CSS, JavaScript",
+      thumbnail: "img/rkelectronics_home2.png",
+      // techStack: ["HTML,CSS, JavaScript"],
       srcURL: "https://rajwant3.github.io/RkElectronics/",
     }, 
   ];
@@ -864,6 +874,9 @@ document.addEventListener("DOMContentLoaded", function () {
     currentIndex = (currentIndex + 1) % projectData.length;
     updateProjectCard(currentIndex);
   });
+
+    // Call the autoSlide function to start automatic image changing on load
+    autoSlide();
 });
 
 
@@ -914,3 +927,33 @@ async function handleSubmit(event) {
 }
 
 form.addEventListener("submit", handleSubmit);
+
+
+
+// Event listeners for the navigation buttons
+prevButton.addEventListener('click', () => {
+    if (sliderCurrentIndex > 0) {
+      sliderCurrentIndex--;
+        updateSlider();
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    if (sliderCurrentIndex < slider.children.length - 1) {
+      sliderCurrentIndex++;
+        updateSlider();
+    }
+});
+// Function to update the slider's position
+function updateSlider() {
+  const offset = -currentIndex * 100;
+  slider.style.transform = `translateX(${offset}%)`;
+}
+
+// Automatic image change every 5 seconds (adjust the interval as needed)
+function autoSlide() {
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateSlider();
+  }, 5000); // Change image every 5 seconds (5000 milliseconds)
+}

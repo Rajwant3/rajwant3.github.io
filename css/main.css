@@ -1812,3 +1812,37 @@ h6 {
   }
 
 }
+
+
+/* Home Page Slider */
+/* Reset some default styles */
+body, div, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the container for the slider */
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Prevents images from overflowing */
+}
+
+/* Style the slider itself */
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style the images in the slider */
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Set the initial position of the slider */
+.slider-container .slider {
+  transform: translateX(0);
+}
