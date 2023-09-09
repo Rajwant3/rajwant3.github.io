@@ -820,7 +820,9 @@ h6 {
   padding-right: 2px;
   transition: background-color 0.3s ease-in-out;
 }
-
+#techStack,#projectOverview{
+  color:#7DF9FF;
+}
 .source-button:hover {
   background-color:blue;
   text-emphasis-color: white;
@@ -1081,7 +1083,8 @@ h6 {
 
 .timeline-content .sub-title {
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: italic;
   color: #fffafa;
   margin-bottom: 10px;
 }
@@ -1134,6 +1137,14 @@ h6 {
   padding: 8px 20px;
 }
 
+#homeImg{
+border-radius:120px 20px 120px 20px;
+border-color: white;
+border: 5px solid;
+
+/* border-width: thick; */
+/* align-items: right; */
+}
 .swal-modal {
   background-color: #ffffffde;
   backdrop-filter: blur(2px);
@@ -1236,12 +1247,13 @@ h6 {
 
   #bio .img {
     padding: 0 20px;
+    border-radius: 50%;
   }
 
   #bio .img .bio-img {
     position: relative;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 50%;
   }
 
   #skills .skill-cards-container {
@@ -1477,7 +1489,7 @@ h6 {
 
   .timeline-content .date {
     position: absolute;
-    color: #bcb5b5;
+    /* color: #bcb5b5; */
     top: -30px;
     left: 0px;
   }
@@ -1676,7 +1688,8 @@ h6 {
     position: relative;
     margin-top: 80px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 50%;
+    border: solid white;
   }
 
   .bio .text {
