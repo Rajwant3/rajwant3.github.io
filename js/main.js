@@ -791,6 +791,18 @@ document.addEventListener("DOMContentLoaded", function () {
 // Load projects 
   const projectData = [
     {
+      title: "Task Buddy",
+      description: "<b  id=\"projectOverview\">Overview: \n</b>TaskBuddy is a robust task management solution designed to empower teams in efficiently organizing and prioritizing tasks. The application provides a user-friendly interface and incorporates features to streamline task management. Below are important details about the application.\n\n<b id=\"techStack\">Tech Stack:</b> HTML, CSS, Thymeleaf, JavaScript, Java, Spring Boot,Spring Security,MySQL Database, Maven",
+      thumbnail: "img/taskbuddy-logo.png",
+      srcURL: "https://github.com/Rajwant3/TaskBuddy/",
+    },
+    {
+      title: "VChat",
+      description: "<b  id=\"projectOverview\">Overview: \n</b>Responsive chat application with styled components using modern web technologies to showcase real-time function where the application ensures instant message delivery with a user-friendly interface and robust backend structure.\n\n<b id=\"techStack\">Tech Stack:</b> HTML, CSS,  MongoDB, Express,React, Node",
+      thumbnail: "img/vchat-logo.png",
+      srcURL: "https://github.com/Rajwant3/Vchat/",
+    },
+    {
       title: "FBG Job Alerts",
       description: "<b  id=\"projectOverview\">Overview: \n</b>This comprehensive platform aggregates various job portals to assist job seekers in receiving tailored email alerts for positions matching their interests and preferred locations. What sets FBG Job Alerts apart is its ability to seamlessly import and process millions of job seeker and job listing data daily,and its versatile data export capabilities in various formats.\n\n<b id=\"techStack\">Tech Stack:</b> HTML, CSS, Angular, JavaScript, Java, Spring Boot, AWS Services",
       thumbnail: "img/oakjobalerts_logo.png",
